@@ -1,0 +1,27 @@
+<%= form_with(model: ajmal) do |form| %>
+  <% if ajmal.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ajmal.errors.count, "error") %> prohibited this ajmal from being saved:</h2>
+
+      <ul>
+        <% ajmal.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :mobile, style: "display: block" %>
+    <%= form.text_field :mobile %>
+  </div>
+
+  <div>
+    <%= form.label :foozbol, style: "display: block" %>
+    <%= form.check_box :foozbol %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ajmal %>
+
+<div>
+  <%= link_to "Edit this ajmal", edit_ajmal_path(@ajmal) %> |
+  <%= link_to "Back to ajmals", ajmals_path %>
+
+  <%= button_to "Destroy this ajmal", @ajmal, method: :delete %>
+</div>

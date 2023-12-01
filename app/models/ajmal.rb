@@ -1,0 +1,2 @@
+class Ajmal < ApplicationRecord
+end

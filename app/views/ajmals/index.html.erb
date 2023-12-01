@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Ajmals</h1>
+
+<div id="ajmals">
+  <% @ajmals.each do |ajmal| %>
+    <%= render ajmal %>
+    <p>
+      <%= link_to "Show this ajmal", ajmal %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ajmal", new_ajmal_path %>
