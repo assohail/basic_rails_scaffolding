@@ -1,4 +1,4 @@
-# Ajmal's Rails App
+# Scaffolding With Rails
 
 Welcome to Ajmal's Rails App! 🚀 This simple Rails application was generated with a scaffold to manage information about Ajmal, including mobile numbers and foozbol preferences.
 
@@ -6,13 +6,17 @@ Welcome to Ajmal's Rails App! 🚀 This simple Rails application was generated w
 
 To get started with this application, follow these steps:
 
-1. Clone the repository to your local machine:
+ ```bash
+ git clone git@github.com:assohail/basic_rails_scaffolding.git
+ cd ajmals-rails-app
+ ```
+ 🔄 Change the default db name (if you want) and credentials
 
-   ```bash
-   git clone git@github.com:your-username/ajmals-rails-app.git
-   cd ajmals-rails-app
-   rails db:migrate
-   rails server
+ ```
+ rails db:create
+ rails db:migrate
+ rails s
+ ```
 
 - You can now visit [http://localhost:3000/ajmals](http://localhost:3000/ajmals) in your browser to interact with the application.
 
